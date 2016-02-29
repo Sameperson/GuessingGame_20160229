@@ -1,4 +1,4 @@
-package com.sameperson.logic;
+package com.sameperson.GuessingGame.logic;
 
 import java.util.Random;
 import java.util.Scanner;

@@ -1,6 +1,6 @@
-package com.sameperson;
+package com.sameperson.GuessingGame;
 
-import com.sameperson.logic.Riddler;
+import com.sameperson.GuessingGame.logic.Riddler;
 
 public class Main {
 
