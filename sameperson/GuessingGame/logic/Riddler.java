@@ -7,6 +7,7 @@ public class Riddler {
 
     private int riddledNumber;
     private int guess;
+    private int maxRiddledNumber;
 
     private Scanner reader;
     private Random random;
@@ -14,13 +15,14 @@ public class Riddler {
     public Riddler(int number) {
         this.random = new Random();
         this.riddledNumber = random.nextInt(number + 1);
+        this.maxRiddledNumber = number;
         this.reader = new Scanner(System.in);
     }
 
     public void run() {
         String input;
         while(true) {
-            System.out.println("Enter your number between 1 and 20: ");
+            System.out.println("Enter your number between 1 and " + maxRiddledNumber +": ");
             input = reader.nextLine();
             if(input.equals("q")) {
                 System.out.println("The game has been interrupted. Bye!");
